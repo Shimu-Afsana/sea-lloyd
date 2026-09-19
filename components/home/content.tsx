@@ -6,7 +6,7 @@ import { ArrowUpRight, ArrowRight, X } from 'lucide-react'
 import { useState } from 'react'
 
 const ports = [
-  { name: 'Port Klang', country: 'Malaysia', x: 68, y: 58 },
+  { name: 'Port Klang', country: 'Malaysia', x: 72, y: 58 },
   { name: 'Singapore', country: 'Singapore', x: 70, y: 65 },
   { name: 'Chittagong', country: 'Bangladesh', x: 67, y: 46 },
   { name: 'Colombo', country: 'Sri Lanka', x: 61, y: 57 },
@@ -16,7 +16,7 @@ const routes = [
   { id: 'klang-singapore', d: 'M68 58 Q69 61 70 65' },
   { id: 'singapore-chittagong', d: 'M70 65 Q73 48 67 46' },
   { id: 'chittagong-colombo', d: 'M67 46 Q62 45 61 57' },
-  { id: 'colombo-klang', d: 'M61 57 Q63 64 68 58' },
+  { id: 'colombo-klang', d: 'M61 57 Q63 64 72 58' },
 ]
 
 const stats = [
