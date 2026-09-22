@@ -239,7 +239,7 @@ export default function ShippingAnimation() {
 
           <h2
             id="shipping-heading"
-            className="mt-5 max-w-[620px] text-[clamp(2git .5rem,5vw,5rem)] font-bold leading-[.98] tracking-[-.055em]"
+            className="mt-5 max-w-[620px] text-[clamp(2.5rem,5vw,5rem)] font-bold leading-[.98] tracking-[-.055em]"
           >
             Moving Cargo. Connecting Markets.
           </h2>
