@@ -16,17 +16,27 @@ export default function ShippingAnimation() {
       aria-labelledby="shipping-heading"
     >
       <style jsx>{`
-        @keyframes truckJourney {
-          0%, 8% {
-            transform: translateX(-20%);
-          }
-          22%, 42% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(0);
-          }
-        }
+      @keyframes truckJourney {
+  0%, 5% {
+    transform: translateX(-30%);
+  }
+
+  10% {
+    transform: translateX(-10%);
+  }
+
+  22% {
+    transform: translateX(45%);
+  }
+
+  30%, 42% {
+    transform: translateX(85%);
+  }
+
+  100% {
+    transform: translateX(85%);
+  }
+}
 
         @keyframes craneLift {
           0%, 42% {
@@ -229,7 +239,7 @@ export default function ShippingAnimation() {
 
           <h2
             id="shipping-heading"
-            className="mt-5 max-w-[620px] text-[clamp(2.5rem,5vw,5rem)] font-bold leading-[.98] tracking-[-.055em]"
+            className="mt-5 max-w-[620px] text-[clamp(2git .5rem,5vw,5rem)] font-bold leading-[.98] tracking-[-.055em]"
           >
             Moving Cargo. Connecting Markets.
           </h2>
