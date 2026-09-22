@@ -66,7 +66,11 @@ export function Footer() {
               Sea Lloyd Shipping Lines Pte. Ltd
             </h2>
             <p className="mt-5 max-w-[510px] text-[16px] leading-[1.8] text-[#344767] sm:text-[17px]">
-              After incorporating Sea Lloyd in India, we managed to bring the company to various locations in Asia which include Hong Kong, Malaysia, Singapore, and Bangladesh.
+               From our foundation in India, Sea Lloyd has grown into a regional 
+               presence across Asia, with offices and partnerships extending across China, 
+               Hong Kong, Malaysia, Singapore, and Bangladesh. Building on this strong Asian network, 
+               we are expanding our reach towards a truly global presence—connecting markets, 
+               strengthening relationships, and creating seamless opportunities for our customers.
             </p>
           </div>
 

@@ -61,7 +61,12 @@ function MegaMenu({ active, setActive }: { active: string | null; setActive: (va
         <div className="max-w-xs border-r border-[#dfe3ed] pr-12">
           <p className="eyebrow text-[#ef7120]">Explore</p>
           <h2 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-[#182044]">{active} at Sea Lloyd</h2>
-          <p className="mt-3 text-sm leading-6 text-[#68708d]">A connected global network, built around your cargo and the markets that matter.</p>
+          <p className="mt-3 text-sm leading-6 text-[#68708d]">Not Just Commitment. We Simply Deliver.
+                                      Sea Lloyd provides reliable point-to-point, port-to-port and door-to-door container liner, 
+                                      multimodal transport and logistics solutions, connecting continents through
+                                      our global network of offices and trusted agency partners.
+                                      From origin to destination, we make shipping simpler, smoother and more
+                                     dependable—delivering your cargo, your way, wherever business takes you.</p>
           <a href="#contact" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#2b3386]">Learn more <ArrowUpRight className="size-4" /></a>
         </div>
         <div className="grid flex-1 grid-cols-2 gap-x-10 gap-y-5 md:grid-cols-3">
