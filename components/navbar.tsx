@@ -5,9 +5,31 @@ import Image from 'next/image'
 import { ArrowUpRight, ChevronDown, ChevronRight, Globe2, Menu, MoveRight, PackageCheck, Route, Search, Ship, X } from 'lucide-react'
 
 const navGroups = [
-  { label: 'About', links: ['About us', 'Our core values', 'Career'] },
-  { label: 'Business', links: ['Why Sea Lloyd', 'Vessel', 'Service routes', 'Tracking', 'Schedule'] },
-  { label: 'Container', links: ['Specification & measurement', 'Dangerous cargo', 'Refrigerated cargo', 'Special cargo'] },
+  { label: 'About', links: [ { label: 'Why Sea Lloyd', href: '/about/why-sea-lloyd' }, 
+    { label: 'About us', href: '/about/about-us' },
+     { label: 'Our core values', href: '/about/our-core-values' },
+      { label: 'Career',href: '/about/career' }, ], },
+  { label: 'Business', links: [ { label: 'Container Liner Services', href: '/business/container-liner-services' },
+      { label: 'Multipurpose Liner Services', href: '/business/multipurpose-liner-services' },
+          { label: 'Multimodal Transport Services', href: '/business/multimodal-transport-services' }, 
+            { label: 'Project and Breakbulk Services', href: '/business/project-and-breakbulk-services' },
+               { label: 'Global Logistics Services', href: '/business/global-logistics-services' }, 
+                 { label: 'Chartering-Ship Brokers', href: '/business/chartering-ship-brokers' }, 
+                   { label: 'Vessel', href: '/business/vessel' }, 
+                   { label: 'Service routes', href: '/business/service-routes' } ] },
+  { label: 'Services', links: [ { label: 'Container Liner Services', href: '/services/container-liner-services' },
+      { label: 'Break-bulk Services',href: '/services/break-bulk-services' }, 
+         { label: 'Project Cargo Services',href: '/services/project-cargo-services' },
+            { label: 'NVOCC Services',href: '/services/nvocc-services' }, 
+               { label: 'Multimodal Transport Services', href: '/services/multimodal-transport-services' },
+                 { label: 'Intermodal Transport Services', href: '/services/intermodal-transport-services' } ] },
+  { label: 'E-Services', links: [ { label: 'Tracking', href: '/e-services/tracking' }, 
+    { label: 'Schedule', href: '/e-services/schedule' },
+     { label: 'Bill of Lading', href: '/e-services/bill-of-lading' } ] },
+  { label: 'Network', links: [ { label: 'Routes', href: '/network/routes' },
+     { label: 'Network Offices', href: '/network/network-offices' },
+      { label:'Associates offices', href: '/network/associates-offices' }, 
+      { label: 'Agencies', href: '/network/agencies' } ] },
 ]
 
 const routes = [
@@ -42,11 +64,10 @@ function DesktopNav({ active, setActive }: { active: string | null; setActive: (
           )}
         </div>
       ))}
-      <a className="nav-link" href="/bill-of-lading">Bill Of Lading</a>
-      <a className="nav-link" href="/agency-network">Agency Network</a>
+      
       <a className="nav-link" href="/articles">Articles</a>
       <a className="nav-link" href="/contact">Contact Us</a>
-      <a className="nav-link" href="/tracking">Tracking</a>
+      
     </div>
   )
 }
@@ -71,9 +92,9 @@ function MegaMenu({ active, setActive }: { active: string | null; setActive: (va
         </div>
         <div className="grid flex-1 grid-cols-2 gap-x-10 gap-y-5 md:grid-cols-3">
           {group.links.map((link, index) => (
-            <a href="#services" key={link} className="group flex items-start gap-3 rounded-lg p-3 transition-colors hover:bg-[#f4f6fb]">
+            <a href={link.href} key={link.label} className="group flex items-start gap-3 rounded-lg p-3 transition-colors hover:bg-[#f4f6fb]">
               <span className="mt-0.5 text-xs font-semibold text-[#9aa1b8]">0{index + 1}</span>
-              <span><span className="block text-sm font-semibold text-[#182044] group-hover:text-[#2b3386]">{link}</span><span className="mt-1 block text-xs text-[#8990a9]">Discover the details</span></span>
+              <span><span className="block text-sm font-semibold text-[#182044] group-hover:text-[#2b3386]">{link.label}</span><span className="mt-1 block text-xs text-[#8990a9]">Discover the details</span></span>
             </a>
           ))}
         </div>
@@ -93,14 +114,14 @@ function MobileNav({ open, setOpen }: { open: boolean; setOpen: (value: boolean)
         {navGroups.map((group) => (
           <div key={group.label} className="border-b border-[#e8eaf1]">
             <button className="mobile-link flex w-full items-center justify-between" onClick={() => setExpanded(expanded === group.label ? null : group.label)}>{group.label}<ChevronDown className={`size-4 transition-transform ${expanded === group.label ? 'rotate-180' : ''}`} /></button>
-            {expanded === group.label && <div className="space-y-3 pb-4 pl-4">{group.links.map((link) => <a href={`/${group.label.toLowerCase()}`} onClick={() => setOpen(false)} key={link} className="block text-sm text-[#68708d]">{link}</a>)}</div>}
+            {expanded === group.label && <div className="space-y-3 pb-4 pl-4">{group.links.map((link) => <a href={link.href} onClick={() => setOpen(false)} key={link.label} className="block text-sm text-[#68708d]">{link.label}</a>)}</div>}
           </div>
         ))}
-        <a href="/bill-of-lading" onClick={() => setOpen(false)} className="mobile-link">Bill Of Lading</a>
-        <a href="/agency-network" onClick={() => setOpen(false)} className="mobile-link">Agency Network</a>
+        <a href="/bill-of-lading" onClick={() => setOpen(false)} className="mobile-link">E-Services</a>
+        <a href="/agency-network" onClick={() => setOpen(false)} className="mobile-link">Network</a>
         <a href="/articles" onClick={() => setOpen(false)} className="mobile-link">Articles</a>
         <a href="/contact" onClick={() => setOpen(false)} className="mobile-link">Contact Us</a>
-        <a href="/tracking" onClick={() => setOpen(false)} className="mobile-link">Tracking</a>
+        
       </div>
     </div>
   )
