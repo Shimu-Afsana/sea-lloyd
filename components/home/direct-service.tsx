@@ -41,7 +41,7 @@ export default function DirectService() {
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 sm:px-10 lg:grid-cols-[0.82fr_1.18fr] lg:gap-8 lg:px-12">
         <div className="max-w-xl motion-safe:animate-[fade-up_0.8s_ease-out_both]">
           <p className="text-xs font-bold tracking-[0.22em] text-[#EF7120]">DIGITAL SOLUTIONS FOR YOU</p>
-          <h2 id="direct-service-heading" className="mt-5 text-4xl font-bold leading-[1.06] tracking-[-0.045em] sm:text-5xl lg:text-[3.55rem]">Your Goods in Good Hands — Safe, Reliable Carriage</h2>
+          <h3 id="direct-service-heading" className="mt-5 text-4xl font-bold leading-[1.06] tracking-[-0.045em] sm:text-5xl lg:text-[3.55rem]">Your Goods in Good Hands — Safe, Reliable Carriage</h3>
           <div className="mt-8 flex flex-col gap-4 border-l-2 border-[#EF7120] pl-5">
             <p className="text-sm font-bold tracking-[0.08em] text-[#EF7120]">ALL-WATER DIRECT CONTAINER LINER SERVICE</p>
             <p className="text-xs font-bold leading-5 tracking-[0.08em] text-[#2B3386]">CONNECTING BAY OF BENGAL • WEST COAST OF INDIA • GULF • RED SEA • EAST AFRICA</p>

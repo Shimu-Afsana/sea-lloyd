@@ -237,12 +237,12 @@ export default function ShippingAnimation() {
             SEALLOYD LOGISTICS
           </p>
 
-          <h2
+          <h3
             id="shipping-heading"
             className="mt-5 max-w-[620px] text-[clamp(2.5rem,5vw,5rem)] font-bold leading-[.98] tracking-[-.055em]"
           >
             Moving Cargo. Connecting Markets.
-          </h2>
+          </h3>
 
           <p className="mt-7 max-w-lg text-base leading-7 text-[#626b91] sm:text-lg sm:leading-8">
             From inland origin to global destination, Sealloyd connects cargo

@@ -4,6 +4,8 @@ import AboutPreview from "@/components/home/about-preview";
 import DirectService from "@/components/home/direct-service";
 import LinerServices from "@/components/home/liner-services";
 import ShippingAnimation from "@/components/home/shipping-animation";
+import CompanyStats from "@/components/home/company-stats";
+import News from "@/components/home/news";
 
 export default function Page() {
   return (
@@ -15,6 +17,8 @@ export default function Page() {
       <Content />
       <AboutPreview />
       <DirectService />
+       <CompanyStats />
+        <News />
     </main>
   )
 }

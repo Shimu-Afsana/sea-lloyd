@@ -44,19 +44,7 @@ export default function LinerServices() {
     }
   }, [])
 
-  /*
-    IMPORTANT:
-    X movement is intentionally very small.
-
-    Ship:
-    upper-right
-        ↓
-    right-center
-        ↓
-    lower-right / slightly-left
-
-    It NEVER travels across the text.
-  */
+ 
   const eased = progress * progress * (3 - 2 * progress)
 
   const translateX = 100 - eased * 120
@@ -85,13 +73,13 @@ export default function LinerServices() {
               </span>
             </div>
 
-            <h2 className="max-w-[620px] text-4xl font-semibold leading-[1.05] tracking-tight text-[#2B3386] sm:text-5xl lg:text-6xl">
+            <h3 className="max-w-[620px] text-4xl font-semibold leading-[1.05] tracking-tight text-[#2B3386] sm:text-5xl lg:text-6xl">
               Every Shipment.
               <br />
               Every Document.
               <br />
               One Place.
-            </h2>
+            </h3>
 
             <p className="mt-7 max-w-[590px] text-lg leading-8 text-slate-600">
               Access your Bills of Lading, shipping documents and essential

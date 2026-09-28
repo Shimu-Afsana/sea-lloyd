@@ -44,9 +44,9 @@ export default function Content() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-6 sm:px-10 lg:grid-cols-[0.8fr_1.4fr] lg:gap-8 lg:px-12">
         <div className="max-w-lg motion-safe:animate-[fade-up_0.8s_ease-out_both]">
           <p className="mb-5 text-xs font-bold tracking-[0.25em] text-[#EF7120]">OUR GLOBAL NETWORK</p>
-          <h2 id="network-heading" className="max-w-md text-4xl font-bold leading-[1.06] tracking-[-0.045em] sm:text-5xl lg:text-[3.6rem]">
+          <h3 id="network-heading" className="max-w-md text-4xl font-bold leading-[1.06] tracking-[-0.045em] sm:text-5xl lg:text-[3.6rem]">
             Connected Across Key Trade Routes
-          </h2>
+          </h3>
           <p className="mt-6 max-w-md text-base leading-7 text-[#58628b] sm:text-lg">
             Connecting Port Klang, Singapore, Chittagong and Colombo with reliable regional shipping services designed to keep your cargo moving.
           </p>
@@ -104,7 +104,7 @@ export default function Content() {
         <div className="flex flex-col gap-7 motion-safe:animate-[fade-up_0.8s_ease-out_both] lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
             <p className="mb-4 text-xs font-bold tracking-[0.25em] text-[#EF7120]">OUR SERVICES</p>
-            <h2 id="services-heading" className="max-w-xl text-4xl font-bold leading-[1.06] tracking-[-0.045em] sm:text-5xl">Tailored Solutions for Every Shipment</h2>
+            <h3 id="services-heading" className="max-w-xl text-4xl font-bold leading-[1.06] tracking-[-0.045em] sm:text-5xl">Tailored Solutions for Every Shipment</h3>
             <p className="mt-5 max-w-2xl text-base leading-7 text-[#58628b] sm:text-lg">Whether it&apos;s a single container or a complex project, we provide end-to-end shipping solutions designed to keep your business moving.</p>
           </div>
           <Link href="/services" className="group inline-flex shrink-0 items-center gap-2 self-start text-sm font-bold text-[#2B3386] transition-colors hover:text-[#EF7120] focus-visible:rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#EF7120] lg:mb-1 lg:self-auto">View All Services <ArrowRight className="transition-transform group-hover:translate-x-1" aria-hidden="true" /></Link>

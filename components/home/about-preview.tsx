@@ -32,7 +32,7 @@ export default function AboutPreview() {
       </div>
       <div className={`max-w-2xl transition duration-700 delay-150 ${visible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}>
         <p className="text-xs font-bold tracking-[0.2em] text-[#EF7120]">OCEANWIDE CONTAINER LINER SERVICES</p>
-        <h2 id="about-preview-heading" className="mt-5 max-w-xl text-4xl font-bold leading-[1.04] tracking-[-0.05em] sm:text-5xl lg:text-[4.2rem]">Generating Hope<br />Delivering Quality</h2>
+        <h3 id="about-preview-heading" className="mt-5 max-w-xl text-4xl font-bold leading-[1.04] tracking-[-0.05em] sm:text-5xl lg:text-[4.2rem]">Generating Hope<br />Delivering Quality</h3>
         <h3 className="mt-7 text-xl font-bold text-[#111b50] sm:text-2xl">Global Expertise in Seamless Ocean Shipping</h3>
         <div className="mt-6 grid gap-4 text-sm leading-7 text-[#58628b] sm:text-base"><p className="border-l-2 border-[#EF7120] pl-5">Sea Lloyd is guided by a highly experienced team of professionals who have been in the industry for decades and have successfully delivered solutions for customers of all industries irrespective of size of enterprises across the oceans around world.</p><p className="border-l-2 border-[#EF7120] pl-5">With strong industry expertise, we offer efficient delivery through PORT-TO-PORT, POINT-TO-POINT, DOOR-TO-DOOR, and SHELF-TO-SHELF services.</p></div>
         <h3 className="mt-9 text-lg font-bold text-[#111b50]">Driven by Experience, Focused on Customer Success</h3>
