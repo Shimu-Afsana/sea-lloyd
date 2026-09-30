@@ -6,7 +6,7 @@ import { ArrowUpRight, ChevronDown, ChevronRight, Globe2, Menu, MoveRight, Packa
 
 const navGroups = [
   { label: 'About', links: [ { label: 'Why Sea Lloyd', href: '/about/why-sea-lloyd' }, 
-    { label: 'About us', href: '/about/about-us' },
+    { label: 'About us', href: '/about' },
      { label: 'Our core values', href: '/about/our-core-values' },
       { label: 'Career',href: '/about/career' }, ], },
   { label: 'Business', links: [ { label: 'Container Liner Services', href: '/business/container-liner-services' },

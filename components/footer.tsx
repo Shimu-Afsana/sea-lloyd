@@ -37,17 +37,15 @@ const socialLinks = [
 function SeaLloydMark() {
   return (
     <Link href="/" aria-label="Sea Lloyd home" className="inline-flex items-center gap-2">
-      <span aria-hidden="true" className="relative block h-16 w-12">
-        <span className="absolute left-1 top-1 h-14 w-7 -rotate-25 rounded-[50%] border-l-[7px] border-[#2B3386]" />
-        <span className="absolute left-3 top-3 h-11 w-6 rotate-25 rounded-[50%] border-l-[5px] border-[#EF7120]" />
-        <span className="absolute bottom-1 left-0 h-2 w-9 -rotate-6 rounded-[50%] bg-slate-400/55" />
-      </span>
+    
       <span className="leading-none">
-        <span className="block text-[27px] font-extrabold tracking-[-0.07em] text-[#2B3386]">
-          SEA<span className="text-[#EF7120]">LLOYD</span>
-        </span>
-        <span className="mt-1 block text-[8px] tracking-[0.45em] text-[#2B3386]">WWW.SEALLOYD.COM</span>
-      </span>
+      <img
+        src="/Sealloyd-logo.png"
+        alt="Sea Lloyd"
+        className="h-14 w-auto"
+      />
+    
+      </span>   
     </Link>
   )
 }

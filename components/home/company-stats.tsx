@@ -3,15 +3,17 @@
 import Image from 'next/image'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
-const statistics = [
-  { value: 15.5, suffix: 'K', title: 'Port Calls', image: '/ports-calls.png', imagePosition: 'center' },
-  { value: 2.5, suffix: 'M', title: 'TEUs Per Year', image: '/teus-per-year.png', imagePosition: 'center' },
-  { value: 850, suffix: '+', title: 'Employees Worldwide', image: '/employees-world.png', imagePosition: 'center' },
-  { value: 35, suffix: '+', title: 'Vessels in Operation', image: '/M.V. Shamayel.png', imagePosition: 'center' },
-  { value: 120, suffix: '+', title: 'Containers', image: '/sealloyd container 2.jpeg', imagePosition: 'center' },
-  { value: 300, suffix: '+', title: 'Ports Served Worldwide', image: '/ports-worldwide.png', imagePosition: 'center' },
-  { value: 40, suffix: '+', title: 'Countries / Office Locations', image: '/office-locations.png', imagePosition: 'center' },
-] as const
+const statistics = [ { value: 15.5, suffix: 'K', title: 'Port Calls', image: '/ports-calls.png', imagePosition: 'center', },
+   { value: 2.5, suffix: 'M', title: 'TEUs Per Year', image: '/teus-per-year.png', imagePosition: 'center', },
+    { value: 850, suffix: '+', title: 'Employees Worldwide', image: '/employees-world.png', imagePosition: 'center', },
+     { value: 35, suffix: '+', title: 'Vessels in Operation', image: '/M.V. Shamayel.png', imagePosition: 'center', }, 
+     { value: 120, suffix: '+', title: 'Containers', image: '/sealloyd container 2.jpeg', imagePosition: 'center', }, 
+     { value: 300, suffix: '+', title: 'Ports Served Worldwide', image: '/ports-worldwide.png', imagePosition: 'center', },
+      { value: 40, suffix: '+', title: 'Countries / Office Locations', image: '/office-locations.png', imagePosition: 'center', }, ]; 
+{/* Statistics */} <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4"> {statistics.map((stat) => ( <div key={stat.title} className="group overflow-hidden rounded-xl border border-gray-200 bg-white" > 
+  {/* Image */} <div className="h-40 overflow-hidden sm:h-44"> <img src={stat.image} alt={stat.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" style={{ objectPosition: stat.imagePosition }} /> </div> {/* Content */} <div className="px-3 py-4 text-center sm:px-4 sm:py-5">
+   {/* Number */} <div className="text-2xl font-bold leading-tight sm:text-[5px] "> {stat.value} {stat.suffix} </div> 
+   {/* Title */} <div className="mt-1 text-xs font-medium leading-snug sm:text-sm"> {stat.title} </div> </div> </div> ))} </div>
 
 const transitionMs = 500
 const ease = 'cubic-bezier(0.22, 1, 0.36, 1)'
