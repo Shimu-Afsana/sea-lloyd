@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { ArrowUpRight, ChevronDown, ChevronRight, Globe2, Menu, MoveRight, PackageCheck, Route, Search, Ship, X } from 'lucide-react'
 
 const navGroups = [
-  { label: 'About', links: [ { label: 'Why Sea Lloyd', href: '/about/why-sea-lloyd' }, 
+  { label: 'About', links: [ { label: 'Why Sea Lloyd', href: '/about/why-seallyod' }, 
     { label: 'About us', href: '/about' },
      { label: 'Our core values', href: '/about/our-core-values' },
       { label: 'Career',href: '/about/career' }, ], },
