@@ -131,7 +131,7 @@ export default function Content() {
   )
 }
 
-/* Small, composable motion utilities for the map; reduced motion is handled globally. */
+
 const styles = `
   svg path { pointer-events: none; }
   .route-line { stroke: #2B3386; stroke-width: .55; fill: none; stroke-dasharray: .8 1.4; animation: route-flow 7s linear infinite; transition: opacity .3s; }

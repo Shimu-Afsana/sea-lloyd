@@ -5,6 +5,7 @@ import DirectService from "@/components/home/direct-service";
 import LinerServices from "@/components/home/liner-services";
 import ShippingAnimation from "@/components/home/shipping-animation";
 import CompanyStats from "@/components/home/company-stats";
+import ContainerTypes from "@/components/home/container-types";
 import News from "@/components/home/news";
 
 export default function Page() {
@@ -18,6 +19,7 @@ export default function Page() {
       <AboutPreview />
       <DirectService />
        <CompanyStats />
+       <ContainerTypes />
         <News />
     </main>
   )

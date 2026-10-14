@@ -19,8 +19,7 @@ export default function LinerServices() {
       const rect = sectionRef.current.getBoundingClientRect()
       const viewport = window.innerHeight
 
-      // Animation starts when section enters viewport
-      // and finishes near the bottom of the section.
+     
       const distance = rect.height - viewport
       const raw = distance > 0 ? -rect.top / distance : 0
 
@@ -61,9 +60,7 @@ export default function LinerServices() {
       <div className="mx-auto flex min-h-screen max-w-[1440px] items-center px-6 py-24 sm:px-8 lg:px-12">
         <div className="grid w-full grid-cols-1 items-center gap-14 lg:grid-cols-[45%_55%] lg:gap-0">
 
-          {/* =========================
-              LEFT — CONTENT ZONE
-          ========================== */}
+       
           <div className="relative z-20 max-w-[650px]">
             <div className="mb-5 flex items-center gap-3">
               <span className="h-px w-10 bg-[#EF7120]" />
@@ -140,12 +137,10 @@ export default function LinerServices() {
             </Link>
           </div>
 
-          {/* =========================
-              RIGHT — SHIP ZONE
-          ========================== */}
+       
           <div className="relative h-[560px] w-full overflow-hidden lg:h-[760px]">
             
-            {/* Subtle decorative route */}
+        
             <div
               className="pointer-events-none absolute right-[8%] top-[12%] h-[72%] w-[72%] rounded-full border border-dashed border-[#EF7120]/15"
               style={{
@@ -153,7 +148,7 @@ export default function LinerServices() {
               }}
             />
 
-            {/* Small route accent */}
+           
             <div
               className="pointer-events-none absolute right-[19%] top-[27%] h-2 w-2 rounded-full bg-[#EF7120] shadow-[0_0_18px_rgba(239,113,32,0.5)]"
               style={{
@@ -161,10 +156,7 @@ export default function LinerServices() {
               }}
             />
 
-            {/* SHIP
-                This entire area is clipped.
-                Therefore the ship cannot invade the text column.
-            */}
+           
             <div className="absolute inset-0 overflow-hidden">
               <div
                 className="absolute right-[-2%] top-[8%] w-[105%] max-w-[850px] will-change-transform"
@@ -188,7 +180,7 @@ export default function LinerServices() {
               </div>
             </div>
 
-            {/* Soft bottom atmosphere */}
+          
             <div className="pointer-events-none absolute bottom-8 right-[8%] h-32 w-[70%] rounded-full bg-[#2B3386]/5 blur-3xl" />
           </div>
         </div>

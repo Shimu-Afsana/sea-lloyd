@@ -231,7 +231,7 @@ export default function ShippingAnimation() {
 
       <div className="mx-auto grid max-w-[1440px] items-center gap-14 px-5 sm:px-8 lg:grid-cols-[minmax(280px,.72fr)_minmax(0,1.28fr)] lg:gap-12 lg:px-12 xl:px-16">
 
-        {/* CONTENT */}
+       
         <div className="relative z-10 max-w-xl">
           <p className="text-xs font-bold tracking-[0.26em] text-[#ef7120]">
             SEALLOYD LOGISTICS
@@ -270,63 +270,61 @@ export default function ShippingAnimation() {
           </div>
         </div>
 
-        {/* ANIMATION */}
+       
         <div className="relative min-w-0">
           <div
             className="relative h-[340px] overflow-hidden rounded-[2rem] border border-white bg-white shadow-[0_24px_60px_rgba(43,51,134,.10)] sm:h-[430px] lg:h-[520px]"
             aria-label="Sealloyd logistics animation"
           >
 
-            {/* CLOUDS */}
+           
             <div className="clouds absolute inset-x-0 top-[15%] flex justify-around text-[#2b3386]/10">
               <Cloud className="size-12 sm:size-20" />
               <Cloud className="mt-8 size-10 sm:size-16" />
               <Cloud className="size-8 sm:size-14" />
             </div>
 
-            {/* OCEAN */}
             <div className="absolute inset-x-0 bottom-0 h-[27%] bg-[#2b3386]/[.035]" />
 
             <div className="absolute bottom-[27%] left-[5%] h-px w-[90%] bg-[#ef7120]/20" />
 
-            {/* ROAD */}
+          
             <div className="absolute bottom-[18%] left-[5%] h-1 w-[38%] rounded-full bg-[#2b3386]/10" />
 
-            {/* TRUCK */}
+           
             <div className="truck absolute bottom-[20%] left-[5%] z-20">
               <div className="relative">
 
                 <Truck className="size-14 text-[#2b3386] sm:size-20" />
 
-                {/* CONTAINER ON TRUCK */}
+               
                 <div className="absolute -right-6 bottom-5 flex h-5 w-9 items-center justify-center bg-[#ef7120] text-[5px] font-bold text-white sm:-right-8 sm:h-7 sm:w-12 sm:text-[6px]">
                   SEALLOYD
                 </div>
 
-                {/* WHEELS */}
+               
                 <span className="wheel absolute bottom-[-3px] left-3 size-2 rounded-full border-2 border-[#2b3386] bg-white sm:size-3" />
                 <span className="wheel absolute bottom-[-3px] right-3 size-2 rounded-full border-2 border-[#2b3386] bg-white sm:size-3" />
               </div>
             </div>
 
-            {/* CRANE */}
             <div className="crane absolute bottom-[27%] left-[43%] z-10 h-[53%] w-[40%]">
 
-              {/* CRANE STRUCTURE */}
+           
               <div className="absolute bottom-0 left-0 h-full w-1 bg-[#2b3386]" />
 
               <div className="absolute bottom-0 left-0 h-1 w-full bg-[#2b3386]" />
 
               <div className="absolute left-0 top-0 h-1 w-full bg-[#ef7120]" />
 
-              {/* VERTICAL CABLE + SPREADER */}
+             
               <div className="spreader absolute left-[48%] top-0 h-[50%] w-px bg-[#2b3386]">
 
                 <div className="absolute -left-2 bottom-0 h-2 w-5 bg-[#ef7120] sm:-left-3 sm:w-7" />
 
               </div>
 
-              {/* CONTAINER BEING CARRIED */}
+             
               <div className="cargo absolute left-[calc(48%-12px)] top-[50%] h-7 w-6 bg-[#ef7120] shadow-[inset_0_0_0_2px_rgba(43,51,134,.2)] sm:-left-[calc(48%-14px)] sm:h-9 sm:w-7">
                 <span className="absolute inset-0 flex items-center justify-center text-[4px] font-bold text-white">
                   BOX
@@ -334,7 +332,7 @@ export default function ShippingAnimation() {
               </div>
             </div>
 
-            {/* SHIP */}
+           
             <div className="ship absolute bottom-[25%] right-[6%] z-10">
               <div className="relative">
 
@@ -346,7 +344,7 @@ export default function ShippingAnimation() {
               </div>
             </div>
 
-            {/* WAVES */}
+            
             <div className="waves absolute bottom-[10%] left-[5%] flex gap-1">
               {Array.from({ length: 18 }).map((_, i) => (
                 <span
@@ -356,7 +354,7 @@ export default function ShippingAnimation() {
               ))}
             </div>
 
-            {/* LABELS */}
+           
             <div className="absolute bottom-[27%] left-[7%] text-[9px] font-bold uppercase tracking-[.2em] text-[#2b3386]/40">
               Road
             </div>

@@ -85,12 +85,10 @@ export default function AboutContent() {
     >
       <div className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-20 xl:grid-cols-[minmax(0,1fr)_340px]">
-          {/* =========================================================
-              LEFT CONTENT
-          ========================================================= */}
+         
 
           <main className="min-w-0">
-            {/* HISTORY */}
+           
             <article
               id="history"
               className="scroll-mt-28 border-b border-[#2B3386]/10 pb-20 lg:pb-28"
@@ -150,7 +148,7 @@ export default function AboutContent() {
               </div>
             </article>
 
-            {/* VISION */}
+          
             <article
               id="vision"
               className="scroll-mt-28 border-b border-[#2B3386]/10 py-20 lg:py-28"
@@ -204,7 +202,7 @@ export default function AboutContent() {
               </div>
             </article>
 
-            {/* MISSION */}
+           
             <article
               id="mission"
               className="scroll-mt-28 border-b border-[#2B3386]/10 py-20 lg:py-28"
@@ -259,7 +257,7 @@ export default function AboutContent() {
               </div>
             </article>
 
-            {/* IDENTITY */}
+           
             <article
               id="identity"
               className="scroll-mt-28 border-b border-[#2B3386]/10 py-20 lg:py-28"
@@ -303,7 +301,7 @@ export default function AboutContent() {
               </div>
             </article>
 
-            {/* IDEOLOGY */}
+         
             <article
               id="ideology"
               className="scroll-mt-28 border-b border-[#2B3386]/10 py-20 lg:py-28"
@@ -346,7 +344,7 @@ export default function AboutContent() {
               </div>
             </article>
 
-            {/* PHILOSOPHY */}
+          
             <article
               id="philosophy"
               className="scroll-mt-28 border-b border-[#2B3386]/10 py-20 lg:py-28"
@@ -387,7 +385,7 @@ export default function AboutContent() {
               </div>
             </article>
 
-            {/* APPROACH */}
+        
             <article
               id="approach"
               className="scroll-mt-28 border-b border-[#2B3386]/10 py-20 lg:py-28"
@@ -424,7 +422,6 @@ export default function AboutContent() {
               </div>
             </article>
 
-            {/* COMMONALITIES */}
             <article
               id="commonalities"
               className="scroll-mt-28 py-20 lg:py-28"
@@ -483,9 +480,7 @@ export default function AboutContent() {
             </article>
           </main>
 
-          {/* =========================================================
-              STICKY TABLE OF CONTENTS
-          ========================================================= */}
+        
 
           <aside className="lg:relative">
             <div className="lg:sticky lg:top-[120px]">
@@ -542,9 +537,7 @@ export default function AboutContent() {
   )
 }
 
-/* =========================================================
-   SMALL COMPONENTS
-========================================================= */
+
 
 function SectionEyebrow({
   number,

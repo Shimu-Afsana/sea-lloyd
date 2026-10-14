@@ -43,9 +43,7 @@ export default function WhySeaLloydStory() {
 
       <div className="mx-auto grid w-full max-w-[1500px] grid-cols-1 lg:grid-cols-[42%_58%]">
 
-        {/* 
-            LEFT CONTENT
-         */}
+     
 
         <div className="relative z-20 flex items-center px-6 sm:px-10 lg:px-12 xl:px-16">
           <div className="w-full max-w-[590px]">
@@ -82,9 +80,7 @@ export default function WhySeaLloydStory() {
           </div>
         </div>
 
-        {/* 
-            RIGHT VISUAL 
-        */}
+       
 
         <div className="relative mt-14 min-w-0 overflow-hidden lg:mt-0">
 
@@ -101,9 +97,7 @@ export default function WhySeaLloydStory() {
             <div className="absolute left-[25%] right-0 top-[75%] h-px bg-[#2B3386]/[0.05]" />
           </div>
 
-          {/* 
-              ANIMATION CONTAINER
-           */}
+        
 
           <div className="relative z-10 h-[390px] w-full overflow-hidden sm:h-[470px] lg:h-[560px] xl:h-[600px]">
 
@@ -127,9 +121,7 @@ export default function WhySeaLloydStory() {
 
             </div>
 
-            {/* 
-                ARROW 2
-             */}
+          
 
             <div className="why-sea-arrow why-sea-arrow-2 absolute top-[14%] h-[72%] w-[52%] lg:w-[58%]">
 
@@ -149,9 +141,7 @@ export default function WhySeaLloydStory() {
 
             </div>
 
-            {/* 
-                ARROW 3
-            */}
+     
 
             <div className="why-sea-arrow why-sea-arrow-3 absolute top-[14%] h-[72%] w-[52%] lg:w-[58%]">
 
@@ -171,9 +161,7 @@ export default function WhySeaLloydStory() {
 
             </div>
 
-            {/* 
-                SMALL ACCENT
-            */}
+            
 
             <div
               aria-hidden="true"
@@ -216,9 +204,7 @@ export default function WhySeaLloydStory() {
 
         }
 
-        /*
-           TABLET
-         */
+   
 
         @media (max-width: 1023px) {
 
@@ -259,10 +245,7 @@ export default function WhySeaLloydStory() {
 
         }
 
-        /*
-           REDUCED MOTION
-         */
-
+     
         @media (prefers-reduced-motion: reduce) {
 
           .why-sea-arrow,
