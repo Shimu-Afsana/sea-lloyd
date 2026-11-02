@@ -38,17 +38,76 @@ const routes = [
   { code: 'ME–EU', name: 'Middle East — Europe', detail: 'Bi-weekly departures · 14 ports', tone: 'bg-[#edf5f1]' },
 ]
 
+type FestivalTheme = 'normal' | 'diwali' | 'eid' | 'christmas'
+
+// Festival theme can be set here. Options: 'normal', 'diwali', 'eid', 'christmas'
+const FESTIVAL_THEME: FestivalTheme = 'diwali'
+
 function Logo() {
   return (
-    <a href="/" className="flex items-center" aria-label="Sea Lloyd home">
+    <a
+      href="/"
+      className={`seasonal-logo seasonal-logo--${FESTIVAL_THEME}`}
+      aria-label="Sea Lloyd home"
+    >
+      <div className="festival-decoration" aria-hidden="true">
+
+        {/* DIWALI */}
+        {FESTIVAL_THEME === 'diwali' && (
+          <>
+            <span className="festival-canopy" />
+            <span className="festival-string string-left" />
+            <span className="festival-string string-right" />
+            <span className="festival-diya diya-left">🪔</span>
+            <span className="festival-diya diya-right">🪔</span>
+            <span className="festival-ornament ornament-left">✺</span>
+            <span className="festival-ornament ornament-right">✺</span>
+            <span className="festival-star star-one">✦</span>
+            <span className="festival-star star-two">✧</span>
+            <span className="festival-star star-three">✦</span>
+          </>
+        )}
+
+        {/* EID */}
+        {FESTIVAL_THEME === 'eid' && (
+          <>
+            <span className="eid-moon">☾</span>
+            <span className="eid-star eid-star-one">✦</span>
+            <span className="eid-star eid-star-two">✧</span>
+            <span className="eid-star eid-star-three">✦</span>
+            <span className="eid-lantern lantern-left">🏮</span>
+            <span className="eid-lantern lantern-right">🏮</span>
+            <span className="eid-string eid-string-left" />
+            <span className="eid-string eid-string-right" />
+          </>
+        )}
+
+        {/* CHRISTMAS */}
+        {FESTIVAL_THEME === 'christmas' && (
+          <>
+            <span className="christmas-hat">🎅</span>
+            <span className="christmas-star christmas-star-one">✦</span>
+            <span className="christmas-star christmas-star-two">✧</span>
+            <span className="christmas-star christmas-star-three">✦</span>
+            <span className="christmas-snow snow-one">❄</span>
+            <span className="christmas-snow snow-two">❄</span>
+            <span className="christmas-ball ball-left">●</span>
+            <span className="christmas-ball ball-right">●</span>
+          </>
+        )}
+
+      </div>
+
       <img
         src="/Sealloyd-logo.png"
         alt="Sea Lloyd"
-        className="h-10 w-auto"
+        className="seasonal-logo-image"
       />
     </a>
   )
 }
+
+
 
 function DesktopNav({ active, setActive }: { active: string | null; setActive: (value: string | null) => void }) {
   return (

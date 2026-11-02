@@ -81,14 +81,14 @@ export function Content() {
           </div>
         </nav>
 
-        <main className="min-w-0">
+        <main className="min-w-0  rounded-2xl bg-[#2b3386] p-6 sm:p-10 lg:p-12">
           <div className="max-w-4xl">
             {sections.map((section, index) => <section id={section.id} key={section.id} className={`scroll-mt-8 border-t border-slate-200 py-12 first:border-t-0 first:pt-0 sm:py-16 ${revealed.includes(section.id) ? 'translate-y-0 opacity-100' : 'translate-y-3 opacity-0'} transition-[opacity,transform] duration-500 ease-out motion-reduce:translate-y-0 motion-reduce:transition-none motion-reduce:opacity-100`}>
               <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#ef7120]">0{index + 1}</p>
-              <h2 className="max-w-3xl text-3xl font-semibold tracking-[-0.035em] text-[#2b3386] sm:text-4xl">{section.title}</h2>
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">{section.intro}</p>
-              {section.paragraphs?.map((paragraph) => <p key={paragraph} className="mt-6 max-w-3xl text-base leading-8 text-slate-600">{paragraph}</p>)}
-              {section.bullets && <ul className="mt-7 grid gap-3 sm:grid-cols-2">{section.bullets.map((bullet) => <li key={bullet} className="flex gap-3 text-base leading-7"><span aria-hidden="true" className="mt-3 size-1.5 shrink-0 rounded-full bg-[#ef7120]" />{bullet}</li>)}</ul>}
+              <h2 className="max-w-3xl text-3xl font-semibold tracking-[-0.035em] text-white sm:text-4xl">{section.title}</h2>
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 text-white">{section.intro}</p>
+              {section.paragraphs?.map((paragraph) => <p key={paragraph} className="mt-6 max-w-3xl text-base leading-8 text-slate-600 text-white">{paragraph}</p>)}
+              {section.bullets && <ul className="mt-7 grid gap-3 sm:grid-cols-2">{section.bullets.map((bullet) => <li key={bullet} className="flex gap-3 text-base text-white leading-7"><span aria-hidden="true" className="mt-3 size-1.5 shrink-0 rounded-full bg-[#ef7120]" />{bullet}</li>)}</ul>}
             </section>)}
           </div>
         </main>
