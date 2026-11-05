@@ -52,21 +52,32 @@ function Logo() {
     >
       <div className="festival-decoration" aria-hidden="true">
 
-        {/* DIWALI */}
-        {FESTIVAL_THEME === 'diwali' && (
-          <>
-            <span className="festival-canopy" />
-            <span className="festival-string string-left" />
-            <span className="festival-string string-right" />
-            <span className="festival-diya diya-left">🪔</span>
-            <span className="festival-diya diya-right">🪔</span>
-            <span className="festival-ornament ornament-left">✺</span>
-            <span className="festival-ornament ornament-right">✺</span>
-            <span className="festival-star star-one">✦</span>
-            <span className="festival-star star-two">✧</span>
-            <span className="festival-star star-three">✦</span>
-          </>
-        )}
+         {/* Hanging strings */}
+          <span className="diwali-string string-left" />
+          <span className="diwali-string string-right" />
+
+          {/* Golden ornaments */}
+          <span className="diwali-ornament ornament-left">✺</span>
+          <span className="diwali-ornament ornament-right">✺</span>
+
+          {/* Red and golden canopy */}
+          <div className="diwali-canopy">
+            <span className="canopy-gold" />
+          </div>
+
+          {/* Hanging Diyas */}
+          <span className="diwali-diya diya-left">🪔</span>
+          <span className="diwali-diya diya-right">🪔</span>
+
+          {/* Golden sparkles */}
+          <span className="diwali-sparkle sparkle-one">✺</span>
+          <span className="diwali-sparkle sparkle-two">✺</span>
+          <span className="diwali-sparkle sparkle-three">✺</span>
+
+      
+
+
+
 
         {/* EID */}
         {FESTIVAL_THEME === 'eid' && (
@@ -186,6 +197,7 @@ function MobileNav({ open, setOpen }: { open: boolean; setOpen: (value: boolean)
   )
 }
 
+
 export function Navbar() {
   const [active, setActive] = useState<string | null>(null)
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -196,6 +208,19 @@ export function Navbar() {
         <div className="mx-auto flex h-[74px] max-w-7xl items-center justify-between px-6 lg:px-10"><Logo /><DesktopNav active={active} setActive={setActive} /><div className="flex items-center gap-3"><a href="/#tracking" className="hidden items-center gap-2 rounded-full bg-[#2b3386] px-4 py-2.5 text-xs font-semibold text-white transition-transform hover:-translate-y-0.5 sm:flex"><Search className="size-3.5" />Track a shipment</a><button className="lg:hidden" onClick={() => setMobileOpen(true)} aria-label="Open menu"><Menu className="size-6" /></button></div></div>
         <MegaMenu active={active} setActive={setActive} />
       </header>
+      {FESTIVAL_THEME === 'diwali' && (
+  <div className="relative flex w-full items-center justify-center gap-4 overflow-hidden bg-[#ef7120] px-4 py-3 text-center text-sm font-semibold text-white shadow-md sm:text-base">
+
+    <span className="animate-pulse text-2xl">🏮</span>
+
+    <span>
+      🪔🪔✨ Wishing You a Very Happy Diwali! 🪔 🪔
+    </span>
+
+    <span className="animate-pulse  text-2xl">🏮</span>
+
+  </div>
+)}
       <MobileNav open={mobileOpen} setOpen={setMobileOpen} />
     </>
   )

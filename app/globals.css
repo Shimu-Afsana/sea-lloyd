@@ -596,83 +596,181 @@
 
 .seasonal-logo-image {
   position: relative;
-  z-index: 3;
+  z-index: 5;
   display: block;
-  height: 60px;
+  height: 70px;
   width: auto;
   object-fit: contain;
 }
 
 .festival-decoration {
   position: absolute;
-  inset: -38px -15px -12px;
+  inset: -30px -15px -12px;
   z-index: 4;
   pointer-events: none;
 }
 .festival-decoration {
   overflow: visible;
-  z-index: 25;
-  top: -10px;
+  z-index: 100;
+  top: 1px;
 }
 
 /* =====================================
    DIWALI
 ===================================== */
 
-.festival-canopy {
+.diwali-decoration {
   position: absolute;
-  top: 5px;
-  left: 12%;
-  right: 12%;
-  height: 6px;
-  border-radius: 3px 3px 6px 6px;
-  background: linear-gradient(180deg, #a00024, #4d0015 65%, #bd8128);
-  box-shadow: 0 3px 9px #0004, 0 0 12px #e5ae3f88;
+  inset: -3px -15px -12px;
+  z-index: 6;
+  pointer-events: none;
+  transform: translateY(14px) scale(1.12);
+  transform-origin: center top;
 }
 
-.festival-string {
+/* Hanging strings */
+
+.diwali-string {
   position: absolute;
-  top: 0px;
+  top: 0;
   width: 2px;
   height: 42px;
-  background: linear-gradient(#a36b16, #ffd76b, #a36b16);
+  background: linear-gradient(to bottom, #a36b16, #ffd76b, #a36b16);
   transform-origin: top;
-  animation: festival-swing 3s ease-in-out infinite;
+  animation: diwali-swing 3s ease-in-out infinite;
 }
 
-.string-left { left: 23%; }
-.string-right { right: 23%; animation-delay: .5s; }
+.string-left { left: 3%; }
+.string-right { right: 3%; animation-delay: .5s; }
 
-.festival-diya {
+/* Golden ornaments */
+
+.diwali-ornament {
   position: absolute;
-  top: 45px;
-  font-size: 25px;
-  animation: festival-glow 2s infinite alternate;
-}
-
-.diya-left { left: 1%; }
-.diya-right { right: 1%; }
-
-.festival-ornament {
-  position: absolute;
-  top: 30px;
+  top: 35px;
   color: #e5ae3f;
-  font-size: 25px;
-  animation: festival-swing 3s ease-in-out infinite;
+  font-size: 27px;
+  text-shadow: 0 0 8px #ffd76b;
+  animation: diwali-swing 3s ease-in-out infinite;
 }
 
-.ornament-left { left: 9%; }
-.ornament-right { right: 9%; animation-delay: .6s; }
+.ornament-left { left: -5%; }
+.ornament-right { right: -5%; animation-delay: .7s; }
 
-.festival-star {
+/* Red golden canopy */
+
+.diwali-canopy {
   position: absolute;
-  color: #e5ae3f;
-  animation: festival-sparkle 2s infinite;
+  top: -4px;
+  left: -7%;
+  right: -7;
+  height: 5px;
+  border-radius: 2px 2px 5px 5px;
+  background: linear-gradient(180deg, #a00024, #4d0015 65%, #bd8128);
+  box-shadow: 0 3px 9px rgba(0,0,0,.3), 0 0 15px rgba(215,166,58,.5);
 }
 
-.star-one { top: 15px; left: 36%; }
-.star-two { top: 42px; right: 28%; animation-delay: .5s; }
-.star-three { top: 12px; right: 37%; animation-delay: 1s; }
+.canopy-gold {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #f4c45d;
+}
+
+/* Hanging Diyas */
+
+.diwali-diya {
+  position: absolute;
+  top: 10px;
+  font-size: 27px;
+  filter: drop-shadow(0 0 10px #ffb52e);
+  animation: diya-glow 2s ease-in-out infinite alternate;
+}
+
+.diya-left { left: -15%; }
+.diya-right { right: -25%; animation-delay: .8s; }
+
+/* Sparkles */
+
+.diwali-sparkle {
+  position: absolute;
+  color: #f5bd47;
+  font-size: 19px;
+  text-shadow: 0 0 9px #ffd76b;
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.sparkle-one { top: 17px; left: 36%; }
+.sparkle-two { top: 44px; right: 28%; animation-delay: .7s; }
+.sparkle-three { top: 12px; right: 37%; animation-delay: 1.2s; }
+
+/* Animations */
+
+@keyframes diwali-swing {
+  0%, 100% { transform: rotate(-7deg); }
+  50% { transform: rotate(7deg); }
+}
+
+@keyframes diya-glow {
+  from { filter: drop-shadow(0 0 2px #e9a52c); }
+  to { filter: drop-shadow(0 0 10px #ffb52e); }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: .2; transform: scale(.7); }
+  50% { opacity: 1; transform: scale(1.3); }
+}
+
+/* Tablet */
+
+@media (max-width: 1023px) {
+  .seasonal-logo-image { height: 38px; }
+
+  .diwali-decoration {
+    transform: translateY(12px) scale(1.02);
+  }
+
+  .diwali-diya { font-size: 23px; }
+  .diwali-ornament { font-size: 23px; }
+}
+
+/* Mobile */
+
+@media (max-width: 640px) {
+  .seasonal-logo-image { height: 34px; }
+
+  .diwali-decoration {
+    inset: -25px -7px -8px;
+    transform: translateY(10px) scale(.92);
+  }
+
+  .diwali-string { height: 35px; }
+  .diwali-ornament { top: 28px; font-size: 21px; }
+  .diwali-canopy { top: 5px; height: 10px; }
+  .diwali-diya { top: 37px; font-size: 20px; }
+  .diwali-sparkle { font-size: 15px; }
+}
+
+/* Small mobile */
+
+@media (max-width: 360px) {
+  .seasonal-logo-image { height: 30px; }
+
+  .diwali-decoration {
+    transform: translateY(9px) scale(.84);
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .diwali-decoration *,
+  .diwali-decoration {
+    animation: none !important;
+  }
+}
 
 /* =====================================
    EID
@@ -728,7 +826,7 @@
 
 .christmas-hat {
   position: absolute;
-  top: -24px;
+  top: -1px;
   left: 37%;
   font-size: 32px;
   transform: rotate(-12deg);
@@ -840,3 +938,26 @@
     animation: none !important;
   }
 }
+
+@theme {
+  --animate-firework: firework-burst 1.8s ease-in-out infinite;
+}
+
+@keyframes firework-burst {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.5) rotate(0deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.4) rotate(45deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-firework {
+    animation: none;
+  }
+}
+
