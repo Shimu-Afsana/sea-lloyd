@@ -15,17 +15,26 @@ const navGroups = [
             { label: 'Project and Breakbulk Services', href: '/business/project-and-breakbulk-services' },
                { label: 'Global Logistics Services', href: '/business/global-logistics-services' }, 
                  { label: 'Chartering-Ship Brokers', href: '/business/chartering-ship-brokers' }, 
-                   { label: 'Vessel', href: '/business/vessel' }, 
-                   { label: 'Service routes', href: '/business/service-routes' } ] },
+                   
+                    ] },
+
   { label: 'Services', links: [ { label: 'Container Liner Services', href: '/services/container-liner-services' },
       { label: 'Break-bulk Services',href: '/services/break-bulk-services' }, 
          { label: 'Project Cargo Services',href: '/services/project-cargo-services' },
             { label: 'NVOCC Services',href: '/services/nvocc-services' }, 
                { label: 'Multimodal Transport Services', href: '/services/multimodal-transport-services' },
                  { label: 'Intermodal Transport Services', href: '/services/intermodal-transport-services' } ] },
+
+       { label: 'Fleet', links: [ { label: 'Container Fleet', href: '/fleet/container-fleet' }, 
+    { label: 'Equipment Vessel', href: '/fleet/equipment-vessel' }] },
+
+
+
   { label: 'E-Services', links: [ { label: 'Tracking', href: '/e-services/tracking' }, 
     { label: 'Schedule', href: '/e-services/schedule' },
      { label: 'Bill of Lading', href: '/e-services/bill-of-lading' } ] },
+
+
   { label: 'Network', links: [ { label: 'Routes', href: '/network/routes' },
      { label: 'Network Offices', href: '/network/network-offices' },
       { label:'Associates offices', href: '/network/associates-offices' }, 
