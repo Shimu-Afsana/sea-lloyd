@@ -21,7 +21,7 @@ const navGroups = [
   { label: 'Services', links: [ { label: 'Container Liner Services', href: '/services/container-liner-services' },
       { label: 'Break-bulk Services',href: '/services/break-bulk-services' }, 
          { label: 'Project Cargo Services',href: '/services/project-cargo-services' },
-            { label: 'NVOCC Services',href: '/services/nvocc-services' }, 
+            { label: 'VOCC Services',href: '/services/vocc-services' }, 
                { label: 'Multimodal Transport Services', href: '/services/multimodal-transport-services' },
                  { label: 'Intermodal Transport Services', href: '/services/intermodal-transport-services' } ] },
 
@@ -50,7 +50,7 @@ const routes = [
 type FestivalTheme = 'normal' | 'diwali' | 'eid' | 'christmas'
 
 // Festival theme can be set here. Options: 'normal', 'diwali', 'eid', 'christmas'
-const FESTIVAL_THEME: FestivalTheme = 'diwali'
+const FESTIVAL_THEME: FestivalTheme = 'normal'
 
 function Logo() {
   return (
@@ -61,27 +61,27 @@ function Logo() {
     >
       <div className="festival-decoration" aria-hidden="true">
 
-         {/* Hanging strings */}
+          {/* Hanging strings 
           <span className="diwali-string string-left" />
-          <span className="diwali-string string-right" />
+          <span className="diwali-string string-right" />*/}
 
-          {/* Golden ornaments */}
+          {/* Golden ornaments 
           <span className="diwali-ornament ornament-left">✺</span>
-          <span className="diwali-ornament ornament-right">✺</span>
+          <span className="diwali-ornament ornament-right">✺</span>*/}
 
-          {/* Red and golden canopy */}
+          {/* Red and golden canopy 
           <div className="diwali-canopy">
             <span className="canopy-gold" />
-          </div>
+          </div> */}
 
-          {/* Hanging Diyas */}
+          {/* Hanging Diyas 
           <span className="diwali-diya diya-left">🪔</span>
-          <span className="diwali-diya diya-right">🪔</span>
+          <span className="diwali-diya diya-right">🪔</span>*/}
 
-          {/* Golden sparkles */}
+          {/* Golden sparkles 
           <span className="diwali-sparkle sparkle-one">✺</span>
           <span className="diwali-sparkle sparkle-two">✺</span>
-          <span className="diwali-sparkle sparkle-three">✺</span>
+          <span className="diwali-sparkle sparkle-three">✺</span>*/}
 
       
 
@@ -196,8 +196,6 @@ function MobileNav({ open, setOpen }: { open: boolean; setOpen: (value: boolean)
             {expanded === group.label && <div className="space-y-3 pb-4 pl-4">{group.links.map((link) => <a href={link.href} onClick={() => setOpen(false)} key={link.label} className="block text-sm text-[#68708d]">{link.label}</a>)}</div>}
           </div>
         ))}
-        <a href="/bill-of-lading" onClick={() => setOpen(false)} className="mobile-link">E-Services</a>
-        <a href="/agency-network" onClick={() => setOpen(false)} className="mobile-link">Network</a>
         <a href="/articles" onClick={() => setOpen(false)} className="mobile-link">Articles</a>
         <a href="/contact" onClick={() => setOpen(false)} className="mobile-link">Contact Us</a>
         
