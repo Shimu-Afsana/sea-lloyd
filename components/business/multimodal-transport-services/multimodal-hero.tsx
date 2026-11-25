@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-const SHIP_IMAGE = '/ocean-freight.jpeg'
+const SHIP_IMAGE = '/Sealloyd-Multimodal-Hero.png'
 
 export function MultimodalHero() {
   const sectionRef = useRef<HTMLElement>(null)

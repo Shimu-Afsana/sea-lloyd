@@ -26,7 +26,7 @@ const navGroups = [
                  { label: 'Intermodal Transport Services', href: '/services/intermodal-transport-services' } ] },
 
        { label: 'Fleet', links: [ { label: 'Container Fleet', href: '/fleet/container-fleet' }, 
-    { label: 'Equipment Vessel', href: '/fleet/equipment-vessel' }] },
+    { label: 'Vessel', href: '/fleet/vessel' }] },
 
 
 
@@ -36,9 +36,9 @@ const navGroups = [
 
 
   { label: 'Network', links: [ { label: 'Routes', href: '/network/routes' },
-     { label: 'Network Offices', href: '/network/network-offices' },
-      { label:'Associates offices', href: '/network/associates-offices' }, 
-      { label: 'Agencies', href: '/network/agencies' } ] },
+     { label: 'Network of Offices', href: '/network/network-of-offices' },
+      { label:'Associates of Offices', href: '/network/associates-of-offices' }, 
+      { label: 'Agency Network', href: '/network/agency-network' } ] },
 ]
 
 const routes = [

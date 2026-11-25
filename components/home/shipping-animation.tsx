@@ -251,7 +251,7 @@ export default function ShippingAnimation() {
 
           <Link
             href="/services"
-            className="group mt-8 inline-flex items-center gap-3 rounded-full bg-[#2b3386] px-6 py-3.5 text-sm font-bold text-white transition duration-300 hover:-translate-y-1 hover:bg-[#ef7120]"
+            className="group mt-8 inline-flex items-center gap-3 bg-[#EF7120] px-6 py-3.5 text-sm font-bold text-white transition duration-300 hover:-translate-y-1 hover:bg-[#2B3386] hover:shadow-[0_12px_24px_rgba(43,51,134,0.22)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#2B3386]"
           >
             Explore Our Services
             <ArrowRight className="transition-transform group-hover:translate-x-1" />

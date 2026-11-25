@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Check } from 'lucide-react'
 
 
-const HERO_IMAGE = '/Container Ship Ocean (1).png'
+const HERO_IMAGE = '/project cargo2.jpg'
 
 const highlights = [
   'Cargo-Specific Planning',

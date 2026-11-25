@@ -14,7 +14,7 @@ interface TransportationOption {
 const transportationOptions: TransportationOption[] = [
   {
     id: 'truck',
-    title: 'TRUCK',
+    title: 'Haulage ',
     description:
       'Provides final mile deliveries across varying distances, offering flexibility tailored to your supply chain schedule.',
     image: '/seallyod-truck.jpeg',
@@ -23,7 +23,7 @@ const transportationOptions: TransportationOption[] = [
   },
   {
     id: 'train',
-    title: 'TRAIN',
+    title: 'Rail',
     description:
       'A sustainable option that provides flexibility and timeliness for high volume shipments.',
     image: '/SeaLloyd Freight Train in Daylight.png',

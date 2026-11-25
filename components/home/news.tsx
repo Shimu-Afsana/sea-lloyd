@@ -87,7 +87,7 @@ export default function News() {
             <h2 id="news-heading" className="font-sans text-5xl font-light tracking-[-0.06em] text-[#2b3386] sm:text-6xl lg:text-7xl">News</h2>
             <span className="mt-4 block h-1 w-12 bg-[#ef7120] lg:mt-5" />
           </div>
-          <Link href="/news" className="mx-auto inline-flex items-center gap-3 rounded-full bg-[#ef7120] px-6 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[#2b3386] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#2b3386] lg:mx-0">
+          <Link href="/news" className="group mt-8 inline-flex items-center gap-3 bg-[#EF7120] px-6 py-3.5 text-sm font-bold text-white transition duration-300 hover:-translate-y-1 hover:bg-[#2B3386] hover:shadow-[0_12px_24px_rgba(43,51,134,0.22)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#2B3386]">
             View All <span aria-hidden="true" className="text-lg leading-none">→</span>
           </Link>
         </div>

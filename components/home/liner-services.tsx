@@ -71,11 +71,11 @@ export default function LinerServices() {
             </div>
 
             <h3 className="max-w-[620px] text-4xl font-semibold leading-[1.05] tracking-tight text-[#2B3386] sm:text-5xl lg:text-6xl">
-              Every Shipment.
+               One Place For.
+              <br />
+             Every Shipment.
               <br />
               Every Document.
-              <br />
-              One Place.
             </h3>
 
             <p className="mt-7 max-w-[590px] text-lg leading-8 text-slate-600">

@@ -9,8 +9,8 @@ const containerTypes = [
   { title: "40' STANDARD", description: '40ft dry container for all non-temperature cargo, ideal for bulk goods, textiles, and electronics.', image: '/sealloyd container 5.jpeg', href: '/container/specification-measurement' },
   { title: "40' HIGH-CUBE", description: 'Extra-tall 40ft container offering more space for lightweight, bulky cargo like furniture or clothing.', image: '/sealloyd container 5.jpeg', href: '/container/specification-measurement' },
   { title: "45' HIGH-CUBE", description: 'Extended 45ft high-cube for large-volume shipments and long-haul transport needing extra capacity.', image: '/sealloyd container 5.jpeg', href: '/container/specification-measurement' },
-  { title: "20' OPEN TOP", description: 'A 20ft open-top container offering a removable tarpaulin roof, ideal for loading heavy or oversized cargo such as machinery, steel, or timber.', image: '/sealloyd container 3.jpeg', href: '/container/specification-measurement' },
-  { title: "40' OPEN TOP", description: 'A 40ft open-top container offering greater capacity for over-height or irregularly shaped cargo.', image: '/sealloyd container 2.jpeg ', href: '/container/specification-measurement' },
+  { title: "20' OPEN TOP", description: 'A 20ft open-top container offering a removable tarpaulin roof, ideal for loading heavy or oversized cargo such as machinery, steel, or timber.', image: '/SLL.20F. Open top.jpg.jpeg', href: '/container/specification-measurement' },
+  { title: "40' OPEN TOP", description: 'A 40ft open-top container offering greater capacity for over-height or irregularly shaped cargo.', image: '/SLL.40F.open top.jpg.jpeg', href: '/container/specification-measurement' },
 ]
 
 export default function ContainerTypes() {

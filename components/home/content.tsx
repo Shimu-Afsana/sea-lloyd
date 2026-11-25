@@ -27,8 +27,8 @@ const stats = [
 ]
 
 const services = [
-  { number: '01', title: 'Ocean Freight', description: 'Reliable container shipping across global trade lanes.', image: '/ocean-freight.jpeg', href: '/services/ocean-freight' },
-  { number: '02', title: 'Project Cargo', description: 'Specialized handling for oversized and heavy cargo.', image: '/sea lloyd container 6.jpeg', href: '/services/project-cargo' },
+  { number: '01', title: 'Ocean Carriage', description: 'Reliable container shipping across global trade lanes.', image: '/ocean-freight.jpeg', href: '/services/ocean-freight' },
+  { number: '02', title: 'Project Cargo', description: 'Specialized handling for oversized and heavy cargo.', image: '/project cargo2.jpg', href: '/services/project-cargo' },
   { number: '03', title: 'Inland Connectivity', description: 'Seamless movement from port to final destination.', image: '/sealloyd container 1.jpeg', href: '/services/inland-connectivity' },
   { number: '04', title: 'Digital Tracking', description: 'Real-time visibility, greater control.', image: '/digital-tracking.png', href: '/services/digital-tracking' },
 ]
@@ -50,7 +50,7 @@ export default function Content() {
           <p className="mt-6 max-w-md text-base leading-7 text-[#58628b] sm:text-lg">
             Connecting Port Klang, Singapore, Chittagong and Colombo with reliable regional shipping services designed to keep your cargo moving.
           </p>
-          <a href="#ports" className="group mt-8 inline-flex min-h-12 items-center gap-3 rounded-full bg-[#EF7120] px-6 text-sm font-bold text-white shadow-[0_10px_25px_rgba(239,113,32,0.2)] transition hover:bg-[#2B3386] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#EF7120]">
+          <a href="#ports" className="group mt-8 inline-flex items-center gap-3 bg-[#EF7120] px-6 py-3.5 text-sm font-bold text-white transition duration-300 hover:-translate-y-1 hover:bg-[#2B3386] hover:shadow-[0_12px_24px_rgba(43,51,134,0.22)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#2B3386]">
             Explore Our Network
             <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" aria-hidden="true" />
           </a>
