@@ -2,8 +2,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -17,6 +15,7 @@ export async function POST(request: Request) {
       message,
     } = body;
 
+    // Validate required fields
     if (!firstName || !lastName || !email || !message) {
       return NextResponse.json(
         { error: "Please fill in all required fields." },
@@ -24,6 +23,7 @@ export async function POST(request: Request) {
       );
     }
 
+    // Validate email
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailPattern.test(email)) {
@@ -33,16 +33,25 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!process.env.RESEND_API_KEY) {
+    // Check environment variables
+    const apiKey = process.env.RESEND_API_KEY;
+    const contactEmail = process.env.CONTACT_EMAIL;
+
+    if (!apiKey || !contactEmail) {
+      console.error("Missing Resend environment variables.");
+
       return NextResponse.json(
         { error: "Email service is not configured." },
         { status: 500 }
       );
     }
 
+    // Initialize Resend only when API is called
+    const resend = new Resend(apiKey);
+
     const { data, error } = await resend.emails.send({
       from: "Sea Lloyd Website <onboarding@resend.dev>",
-      to: [process.env.CONTACT_EMAIL!],
+      to: [contactEmail],
       replyTo: email,
       subject: `New Contact Message - ${firstName} ${lastName}`,
       text: `
@@ -72,6 +81,7 @@ ${message}
       message: "Your message has been sent successfully.",
       id: data?.id,
     });
+
   } catch (error) {
     console.error("Contact API Error:", error);
 
@@ -81,3 +91,4 @@ ${message}
     );
   }
 }
+
