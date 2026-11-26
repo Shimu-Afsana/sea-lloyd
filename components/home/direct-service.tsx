@@ -76,7 +76,7 @@ export default function DirectService() {
     >
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 sm:px-8 lg:grid-cols-[0.82fr_1.18fr] lg:gap-8 lg:px-12">
 
-        {/* LEFT CONTENT */}
+        
         <div className="mx-auto w-full max-w-xl motion-safe:animate-[fade-up_0.8s_ease-out_both]">
           <p className="text-xs font-bold tracking-[0.22em] text-[#EF7120]">
             DIGITAL SOLUTIONS FOR YOU
@@ -128,17 +128,17 @@ export default function DirectService() {
           </Link>
         </div>
 
-        {/* RIGHT VISUAL + CARDS */}
+    
         <div className="mx-auto w-full max-w-[680px]">
 
-          {/* IMAGE VISUAL */}
+          
           <div
             ref={visualRef}
             onPointerMove={handlePointerMove}
             onPointerLeave={resetOffset}
             className="relative h-[380px] w-full sm:h-[440px] lg:h-[580px]"
           >
-            {/* ROUTE ANIMATION - DESKTOP */}
+            
             <svg
               className="pointer-events-none absolute inset-[3%] z-[1] hidden h-[94%] w-[94%] overflow-visible lg:block"
               viewBox="0 0 600 520"
@@ -190,10 +190,10 @@ export default function DirectService() {
               </circle>
             </svg>
 
-            {/* BACKGROUND CIRCLE */}
+           
             <div className="absolute inset-[12%] z-[2] rounded-full bg-[#08a8d8]/10 motion-safe:animate-[pulse-soft_5s_ease-in-out_infinite]" />
 
-            {/* SHIP IMAGE */}
+         
             <div
               className="absolute left-[8%] top-[12%] z-[3] w-[84%] transition-transform duration-500 ease-out motion-safe:animate-[float-soft_7s_ease-in-out_infinite] lg:left-[20%] lg:top-[25%] lg:w-[68%]"
               style={{
@@ -210,7 +210,6 @@ export default function DirectService() {
               />
             </div>
 
-            {/* CONTAINER IMAGE */}
             <div
               className="absolute bottom-[8%] right-[7%] z-[4] w-[32%] transition-transform duration-500 ease-out motion-safe:animate-[float-soft-reverse_8s_ease-in-out_infinite] lg:bottom-auto lg:left-[8%] lg:right-auto lg:top-[42%] lg:w-[31%]"
               style={{
@@ -226,7 +225,7 @@ export default function DirectService() {
               />
             </div>
 
-            {/* FLOATING CARDS - DESKTOP ONLY */}
+  
             {cards.map(({ title, text, icon: Icon, position }, index) => (
               <div
                 key={title}
@@ -251,7 +250,6 @@ export default function DirectService() {
             ))}
           </div>
 
-          {/* MOBILE & TABLET CARDS */}
           <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:hidden">
             {cards.map(({ title, text, icon: Icon }) => (
               <div

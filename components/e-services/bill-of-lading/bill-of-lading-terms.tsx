@@ -15,7 +15,7 @@ export function BillOfLadingTerms() {
 
   const linkRefs = useRef<Record<string, HTMLAnchorElement | null>>({})
 
-  // Scroll spy: detects the currently visible clause
+  
   useEffect(() => {
     const sections = billOfLadingClauses
       .map(({ id }) => document.getElementById(id))
@@ -72,7 +72,7 @@ export function BillOfLadingTerms() {
     }
   }, [])
 
-  // Automatically keep active sidebar option visible
+  
   useEffect(() => {
     const link = linkRefs.current[activeId]
     const nav = link?.closest("nav")
@@ -114,7 +114,7 @@ export function BillOfLadingTerms() {
   return (
     <section className="mx-auto max-w-[1440px] px-5 pb-20 pt-10 sm:px-8 sm:pb-24 sm:pt-14 lg:px-12 lg:pt-[4.5rem]">
 
-      {/* Header */}
+
       <div className="mb-7 flex flex-wrap items-end justify-between gap-4 border-b border-[#e2e8f0] pb-5 sm:mb-10">
         <div>
           <div className="mb-3 h-[3px] w-10 rounded-full bg-[#ef7120]" />
@@ -137,10 +137,10 @@ export function BillOfLadingTerms() {
         </p>
       </div>
 
-      {/* Main Layout */}
+   
       <div className="grid items-start gap-8 lg:grid-cols-[minmax(250px,300px)_minmax(0,1fr)] lg:gap-12 xl:gap-16">
 
-        {/* LEFT STICKY SIDEBAR */}
+       
         <aside className="hidden self-start lg:sticky lg:top-24 lg:block">
 
           <nav
@@ -192,10 +192,10 @@ export function BillOfLadingTerms() {
           </nav>
         </aside>
 
-        {/* RIGHT CONTENT */}
+       
         <div className="min-w-0">
 
-          {/* MOBILE NAVIGATION */}
+         
           <div className="sticky top-0 z-20 -mx-5 mb-6 border-y border-[#e2e8f0] bg-white/95 px-5 py-3 backdrop-blur sm:-mx-8 sm:px-8 lg:hidden">
 
             <button
@@ -272,7 +272,7 @@ export function BillOfLadingTerms() {
             )}
           </div>
 
-          {/* ARTICLE CONTENT */}
+         
           <article className="min-w-0">
 
             <p className="mb-8 border-l-2 border-[#ef7120] pl-4 text-base leading-7 text-[#45556c] sm:mb-10 sm:pl-5 sm:text-[17px] sm:leading-[1.85]">
@@ -333,7 +333,7 @@ export function BillOfLadingTerms() {
         </div>
       </div>
 
-      {/* DOWNLOAD SECTION */}
+     
       <div className="mt-8 border-t border-[#e2e8f0] pt-8 text-center sm:mt-12 sm:pt-10">
 
         <p className="mb-4 text-sm text-[#45556c]">

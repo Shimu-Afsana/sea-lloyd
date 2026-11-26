@@ -118,16 +118,14 @@ function sailingMatchesPort(
 
   const matchingColumns = getMatchingPortColumns(route, port)
 
-  // If the port has a matching ETA/ETB/ETD column,
-  // only show sailings that actually have a date in that column.
+  
   if (matchingColumns.length > 0) {
     return matchingColumns.some(
       (column) => getSailingValue(sailing, column) !== "",
     )
   }
 
-  // Fallback for ports that appear as route endpoints
-  // but do not have a separate milestone column.
+
   return (
     matchesPortName(route.origin, terms) ||
     matchesPortName(route.destination, terms)
@@ -171,7 +169,6 @@ function getSearchMode(
   if (mode === "port") return "port"
   if (mode === "all" || mode === "long range") return "all"
 
-  // Fallback if a URL contains search values but no valid mode.
   if (vessel) return "vessel"
   if (port) return "port"
   if (origin || destination) return "point"
@@ -286,7 +283,7 @@ function VesselScheduleContent() {
   const matchedSailings = useMemo(() => {
     const results: MatchedSailing[] = []
 
-    // No valid search mode: do not run a global search.
+
     if (!mode) return results
 
     // Vessel and Port searches must have a search value.

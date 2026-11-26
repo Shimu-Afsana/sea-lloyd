@@ -48,13 +48,12 @@ export default function AboutPreview() {
     >
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20 lg:px-12">
 
-        {/* IMAGE SECTION */}
         <div
           onPointerMove={move}
           onPointerLeave={resetTilt}
           className="relative mx-auto aspect-[1.05] w-full max-w-[560px]"
         >
-          {/* BACK IMAGE */}
+
           <div
             className="absolute left-[2%] top-[8%] h-[68%] w-[78%] overflow-hidden rounded-sm border-[6px] border-white bg-[#eef1f8] shadow-[0_20px_45px_rgba(43,51,134,0.16)] transition-transform duration-500 ease-out sm:border-8"
             style={{
@@ -69,8 +68,6 @@ export default function AboutPreview() {
               className="object-cover"
             />
           </div>
-
-          {/* FRONT IMAGE */}
           <div
             className="absolute bottom-[2%] right-[3%] h-[52%] w-[60%] overflow-hidden rounded-sm border-[6px] border-white bg-[#eef1f8] shadow-[0_20px_45px_rgba(43,51,134,0.2)] transition-transform duration-500 ease-out sm:border-8"
             style={{
@@ -87,7 +84,6 @@ export default function AboutPreview() {
           </div>
         </div>
 
-        {/* CONTENT SECTION */}
         <div className="mx-auto w-full max-w-2xl">
           <p className="text-xs font-bold tracking-[0.2em] text-[#EF7120]">
             OCEANWIDE CONTAINER LINER SERVICES
